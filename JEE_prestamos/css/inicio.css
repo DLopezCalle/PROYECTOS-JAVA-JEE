@@ -1,0 +1,70 @@
+@charset "ISO-8859-1";
+
+:root {
+	
+	--principal: #3F51B5;
+    --principalOscuro: #303F9F;
+    --contraste: #FFEB3B;
+    --contrasteOscuro: #F2DA00;    
+    --fondo: #C5CAE9;
+    --fondoClaro: #FFFFFF;
+    --texto: #212121;
+    --textoClaro: #FFFFFF;
+	
+}
+
+#agregar
+{
+	background-color: var(--fondo);
+	margin: 0.2%;
+	padding: 1%;
+	font-size: 120%;
+	
+	display: flex;
+	flex-direction: rows;
+	justify-content: center;
+}
+
+main 
+{
+	padding: 2%;
+	background-color: var(--fondo);
+}
+
+table 
+{
+	background-color: var(--fondoClaro);
+	width: 100%;
+	padding: 1%;
+}
+
+th
+{
+	background-color: var(--principalOscuro);
+	color: var(--textoClaro);
+	padding: 1%;
+	
+}
+
+td
+{	
+	text-align: center;
+	border-right: 1px solid;
+	border-bottom: 1px solid;	
+	
+}
+
+tbody :hover 
+{
+	background-color: var(--contrasteOscuro);
+}
+
+.imagen 
+{
+	width: 10%;
+}
+
+.imagen a img
+{
+	width: 30%;
+}

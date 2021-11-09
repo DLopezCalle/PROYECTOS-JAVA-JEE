@@ -1,0 +1,97 @@
+@charset "ISO-8859-1";
+
+:root {
+	
+	--principal: #3F51B5;
+    --principalOscuro: #303F9F;
+    --contraste: #FFEB3B;
+    --contrasteOscuro: #F2DA00;    
+    --fondo: #C5CAE9;
+    --fondoClaro: #FFFFFF;
+    --texto: #212121;
+    --textoClaro: #FFFFFF;
+	
+}
+
+#filtro
+{
+	background-color: var(--fondo);
+	margin: 0.2%;
+	padding: 1%;
+	font-size: 120%;
+	
+	display: flex;
+	flex-direction: rows;
+	justify-content: center;
+}
+
+main
+{
+	display: flex;
+	flex-direction: rows;
+	justify-content: center;
+	
+	
+}
+
+section 
+{
+	background-color: var(--fondo);
+	margin: 0.2%;
+	padding: 1%;
+	width: 50%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section article
+{
+	background-color: var(--fondoClaro);
+	width: 98%;
+	padding: 1%;
+	margin: 1%;
+	
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+article h3 
+{
+	background-color: var(--principalOscuro);
+	color: var(--textoClaro);
+	padding: 1%;
+	width: 50%;
+	text-align: center;
+}
+
+table 
+{
+    background-color: var(--fondoClaro);
+	padding: 1%;
+	width: 100%;
+}
+
+th
+{
+	background-color: var(--principalOscuro);
+	color: var(--textoClaro);
+	padding: 1%;
+}
+
+td
+{	
+	text-align: center;
+	padding: 1%;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+}
+
+tbody :hover 
+{
+	background-color: var(--contrasteOscuro);
+}
+
