@@ -1,0 +1,242 @@
+@charset "ISO-8859-1";
+
+:root {
+	
+	--principal: #3F51B5;
+    --principalOscuro: #303F9F;
+    --contraste: #FFEB3B;
+    --contrasteOscuro: #F2DA00;    
+    --fondo: #C5CAE9;
+    --fondoClaro: #FFFFFF;
+    --texto: #212121;
+    --textoClaro: #FFFFFF;
+	
+}
+
+* {
+	
+	margin: 0;
+	padding: 0;
+	color: var(--texto);
+	text-decoration: none;
+	
+}
+
+header {
+	
+	background-color: var(--principal);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 1%;
+	
+}
+
+header img {
+	
+	width: 100%;
+	
+}
+
+header h1 {
+	
+	color: var(--textoClaro);
+	margin: 0 70% 0 2%;
+	
+}
+
+header a {
+	
+	width: 7%;
+	
+}
+header a :hover {
+	
+	cursor: pointer;
+	
+}
+
+#imgpedido {
+	
+	width: 100%;
+	
+}
+
+#articulos {
+	
+	padding: 2%;
+	background-color: var(--fondo);
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.articulo {
+	
+	width: 20%;
+	height: 100%;
+	background-color: var(--fondoClaro);
+	margin: 1.5%;
+	border-radius: 5%;
+	padding: 1%;
+	font-size: 150%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.articulo :hover {
+	
+	background-color: var(--contraste);
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: all 0.2s ease 0.2s;
+	border-radius: 5%;
+	
+	
+}
+
+.atributos {
+	
+	font-size: 80%;
+	text-align: center;
+	
+}
+
+
+.articulo a {
+	
+	text-decoration: none;
+	border: 0;
+	background-color: transparent;
+	margin: 0 0 4% 0;
+	
+}
+
+.articulo a :hover {
+	
+	transition: all 10s ease 10s;
+	
+}
+
+.pedido {
+	
+	background-color: var(--contraste);
+	
+}
+
+.pedido :hover {
+	
+	background-color: red;
+	
+}
+
+.imgproducto {
+	
+	width: 100%;
+	height: 260px;
+	
+}
+
+
+/* ticket.jsp */
+
+#seccionTabla {
+	
+	padding: 2%;
+	background-color: var(--fondo);
+	
+}
+
+table {
+	
+	width: 100%;
+	background-color: var(--fondoClaro);
+	text-align: center;
+	
+}
+
+thead tr th {
+	
+	background-color: var(--principalOscuro);
+	color: var(--textoClaro);
+	
+}
+
+td {
+	
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	
+}
+
+.cuadroImagen {
+	
+	width: 10%;
+	
+}
+
+.cuadroImagen img {
+	
+	height: 100px;
+	
+	
+}
+
+#finalizar {
+	
+	width: 100%; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	background-color: var(--fondo);
+	
+	
+}
+
+#finalizar form {
+	
+	width: 20%;
+	
+}
+
+#finalizar form input {
+	
+	padding: 3%;
+	background-color: var(--principalOscuro);
+	color: var(--textoClaro);
+	
+}
+
+th {
+	
+	padding: 1%;
+	
+}
+
+td a img {
+	
+	width: 80%;
+	
+}
+
+#finalizar form input :hover {
+	
+	cursor: pointer;
+	background-color: var(--contrasteOscuro);
+	
+}
+
+#total {
+	
+	background-color: var(--principalOscuro);
+	color: var(--textoClaro);
+	padding: 1.5%;
+	width: 10%;
+	margin: 0 1.5% 0 0;
+	
+}
+
+

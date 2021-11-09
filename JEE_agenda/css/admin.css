@@ -1,0 +1,114 @@
+@charset "ISO-8859-1";
+
+:root {
+	
+	--principal: #3F51B5;
+    --principalOscuro: #303F9F;
+    --contraste: #FFEB3B;
+    --contrasteOscuro: #F2DA00;    
+    --fondo: #C5CAE9;
+    --fondoClaro: #FFFFFF;
+    --texto: #212121;
+    --textoClaro: #FFFFFF;
+}
+
+main 
+{
+	background-color: var(--fondo);
+	width: 100%;
+	display: flex;
+	flex-direction: columns;
+}
+
+main section
+{
+	width: 50%;
+	
+}
+
+/* section de la izquierda */
+#seccionCrud {
+	margin: 1% 1% 10% 1%;
+	width: 60%;
+}
+
+#seccionCrud h3
+{
+	background-color: var(--fondoClaro);
+	padding: 1%;
+	margin-bottom: 0.5%;
+	text-align: center;
+	
+}
+
+/* section de la derecha */
+#seccionAgregar
+{	
+	background-color: var(--principalOscuro);	
+	width: 40%;
+	height: 505px;
+	
+	display: flex;
+	flex-direction: rows;
+	justify-content: center;
+	align-items: center;
+	
+	position: sticky;
+	top: 0;
+}
+
+#seccionAgregar form
+{
+	width: 80%;
+	padding: 2%;
+	
+	display: flex;
+	flex-direction: column;	
+	align-items: center;
+}
+
+#seccionAgregar form h2 
+{
+	color: var(--textoClaro);
+	font-size: 180%;
+	margin: 3%;
+}
+
+#seccionAgregar form label 
+{
+	color: var(--textoClaro);
+	font-size: 130%;
+	margin: 1%;
+}
+
+
+#seccionAgregar form input 
+{
+	font-size: 100%;
+	padding: 2%;
+	width: 50%;
+	margin: 1%;
+	transition: 0.5s;
+}
+
+#seccionAgregar form input:focus
+{
+	border-color: var(--contrasteOscuro);
+	border-radius: 20px;
+	
+	transform: scale(1.1);
+	transition: all 0.1s ease 0.1s;
+	transition: 0.5s;
+}
+
+#boton
+{
+	border-radius: 10px;
+}
+
+#boton:hover
+{
+	background-color: var(--fondo);
+	cursor: pointer;
+	transition: 0.3s;
+}

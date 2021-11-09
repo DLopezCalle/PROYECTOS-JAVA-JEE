@@ -1,0 +1,128 @@
+@charset "ISO-8859-1";
+
+:root {
+	
+	--principal: #3F51B5;
+    --principalOscuro: #303F9F;
+    --contraste: #FFEB3B;
+    --contrasteOscuro: #F2DA00;    
+    --fondo: #C5CAE9;
+    --fondoClaro: #FFFFFF;
+    --texto: #212121;
+    --textoClaro: #FFFFFF;
+	
+}
+
+* 
+{	
+	margin: 0;
+	padding: 0;
+	color: var(--texto);	
+}
+
+body 
+{
+	background-color: var(--fondo);
+}
+
+/* ----------------------- CABECERA ----------------------- */
+header 
+{	
+	background-color: var(--principal);
+	padding: 1%;
+	
+	display: flex;
+	flex-direction: rows;
+	justify-content: center;
+}
+
+header h1 
+{
+	color: var(--textoClaro);
+	font-size: 300%;
+}
+
+nav 
+{
+	background-color: var(--principalOscuro);
+	
+	display: flex;
+	flex-direction: rows;
+	justify-content: center;
+}
+
+nav a 
+{
+	color: var(--texto);
+	background-color: var(--contrasteOscuro);
+	
+	text-decoration: none;
+	font-size: 150%;
+			
+	padding: 1%;
+	width: 100%;
+	text-align: center;
+	
+	transition: 0.3s;
+}
+
+nav a:hover 
+{
+	background-color: var(--principalOscuro);
+	color: var(--fondoClaro);
+	
+	transition: 0.3s;
+}
+
+nav a:focus
+{
+	background-color: var(--contrasteOscuro);
+}
+
+/* ----------------------- ETIQUETAS EN COMÚN ----------------------- */
+/* Estilo de la tabla de contactos */
+table
+{
+	background-color: var(--fondoClaro);
+	width: 100%;
+}
+
+thead 
+{
+	position: sticky;
+	top: 0;
+}
+
+th
+{
+	background-color: var(--principalOscuro);
+	color: var(--textoClaro);
+	font-size: 120%;
+	padding: 1.5%;
+}
+
+td
+{
+	padding: 1%;
+	text-align: center;
+	font-size: 120%;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+}
+
+.tdImagen 
+{
+	width: 20%;
+}
+
+.tdImagen a img
+{
+	width: 30%;
+}
+
+tbody :hover
+{
+	background-color: var(--contrasteOscuro);
+	transform: scale(1.03);
+	transition: all 0.1s ease 0.1s;
+}

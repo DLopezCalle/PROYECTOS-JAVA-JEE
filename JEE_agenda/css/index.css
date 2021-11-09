@@ -1,0 +1,14 @@
+@charset "ISO-8859-1";
+
+:root 
+{	
+    --fondo: #C5CAE9;
+}
+
+main
+{
+	background-color: var(--fondo);
+	padding: 3%;
+}
+
+/* Si, un archivo CSS solo para esto uwu */
